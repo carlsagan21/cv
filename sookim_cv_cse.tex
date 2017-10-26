@@ -19,6 +19,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\def\verbose{0}
+
 \documentclass[10pt]{article} % Default font size
 
 \input{structure.tex} % Include the file specifying document layout
@@ -26,7 +28,6 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -42,15 +43,16 @@
 \> Seoul, 08840, Republic of Korea \\ % Address line 2
 {\bf Date of Birth} \> 25$^{th}$ September 1991 \\ % Date of birth 
 {\bf Nationality} \> Republic of Korea % Nationality
-\end{tabbing}}
+\end{tabbing}
+}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-%{\bf Home Phone} \> +82 (10) 8560 6797 \\ % Home phone
-{\bf Mobile Phone} \> +82 (10) 8560 6797 \\ % Mobile phone
+{\bf Mobile Phone} \> +82 10 8560 6797 \\ % Mobile phone
 {\bf Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com} \\ % Email address
-{\bf Web} \> \href{https://www.linkedin.com/in/soo-kim-carlsagan96/}{linkedin} \\ % Mobile phone
+{\bf linkedin} \> \href{https://www.linkedin.com/in/soo-kim-carlsagan96/}{soo-kim-carlsagan96} \\
+{\bf Github} \> \href{https://github.com/carlsagan21}{carlsagan21}
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -59,9 +61,8 @@
 
 \section{Personal Profile}
 
-Research Assistant at Programming Research Laboratory ROPAS, Computer Science and Engineering, Seoul National University.
-
-Super-interested in Program analysis, especially static analysis(abstract interpretation), for its inherent stability. And Interested in big data analysis systems and ML. And love the state of art techs in web development from UI/UX to DB and System admin.
+Research Assistant at Programming Research Laboratory ROPAS, Computer Science and Engineering, Seoul National University.\\
+Interested in program analysis, distributed computing, clustering, and the-state-of-art techniques in web development from front-end to architecture.
 
 %----------------------------------------------------------------------------------------
 %	Research Experience SECTION
@@ -74,17 +75,20 @@ Super-interested in Program analysis, especially static analysis(abstract interp
 {Programming Research Laboratory, Seoul National University}
 {http://ropas.snu.ac.kr/}
 {Research Assistant}
-{Automated program corrector using machine learning Program Language.\\
-\rule{0mm}{5mm}\textbf{Technologies:} Tensorflow, Seq2seq.}
+{Automated program corrector using machine learning.\\
+%Automated program error localization using SAT-solver.\\
+\rule{0mm}{5mm}{Technologies:} Tensorflow, seq2seq}
 
 %------------------------------------------------
 
+\if\verbose1
 \job
 {Mar 2015 -}{Aug 2016}
 {Jang’s Lab for Human Nature Studies and Philosophy of Biology, Seoul National University}
 {}
 {Research Assistant}
 {Researched Cultural Evolution, Morality and Sociality at Transdisciplinary Research Center for Culture-Brain Dynamics}
+\fi
 
 %----------------------------------------------------------------------------------------
 %	Work Experience SECTION
@@ -94,25 +98,26 @@ Super-interested in Program analysis, especially static analysis(abstract interp
 
 \job
 {Dec 2015 -}{Aug 2016}
-{ab180, Seoul, Republic of Korea}
+{Ab180, Seoul, Republic of Korea}
 {https://airbridge.io/}
 {Front-end Developer}
-{In ab180, which developed a mobile marketing analytics, I fully redesigned the structure of front-end web page with React and supplementary libraries. And I applied several functional programming techs (like immutability, pure functions, etc.) to make it stable at best.
+{Airbridge (Mobile app marketing performance analytics) https://airbridge.io/
 
-The web page handled hundreds of thousands of data without any effort and error, and it is servicing even now.\\
-\rule{0mm}{5mm}\textbf{Technologies:} React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon E2. / As a team, Scrum, JIRA, Confluence, Trello}
+Developed front-end web alone using React.
+
+Attracted the 600M won(540,000\$) investment from TIPS. http://www.jointips.or.kr/\\
+\rule{0mm}{5mm}{Technologies:} React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon E2. / As a team, Scrum, JIRA, Confluence, Trello}
 
 %------------------------------------------------
 
+\if\verbose1
 \job
 {Sep 2011 -}{Jun 2013}
 {Republic of Korea Army}
 {}
 {Sergeant}
-{Mobilization Admin. at a battalion.
-
-Organized volunteer group for educating local students. Connected with local children center, we educated children who can hardly access to private educational institutes. 
-}
+{}
+\fi
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -120,46 +125,65 @@ Organized volunteer group for educating local students. Connected with local chi
 
 \section{Education}
 
-\tabbedblock{
-\bf{2011-} \> Undergraduate in Computer Science and Engineering Cognitive Studies of Religion\\
-\> - \href{http://www.snu.ac.kr/index.html}{Seoul National University} \\[5pt]
-\> Gpa - 3.75/4.3\\
-\> Gpa(Major) - 3.85/4.3\\
+\job
+{Mar 2011 -}{Present}
+{Seoul National University, Seoul, Republic of Korea}
+{http://www.snu.ac.kr/index.html}
+{College of Liberal Studies}
+{
+\textit{Candidate for Bachelor?s Degree in Computer Science Engineering}\\
+\textit{Candidate for Bachelor?s Degree in Cognitive Studies of Religion}\\
+4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
+GPA: 3.75/4.3 \hspace{10mm} GPA(Major): 3.85/4.3\\
+\rule{0mm}{5mm}{Related Courses:} Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
+}
+
+%------------------------------------------------
+
+\job
+{Sep 2016 -}{Feb 2017}
+{Kyoto University, Kyoto, Japan}
+{http://www.kyoto-u.ac.jp}
+{Exchange Semester}
+{
+Overseas Study Abroad Support System Scholarship - \textit{480,000 yen(4800\$)} \href{http://www.jasso.go.jp/ryugaku/tantosha/study_a/short_term_h/index.html}{JASSO}\\
+\rule{0mm}{5mm}{Related Courses:} Programming Languages
+}
+
+%\tabbedblock{
+%\bf{Fall 2016} \> Exchange Semester - \href{http://www.kyoto-u.ac.jp}{Kyoto University}\\[5pt]
+%\> GPA - 89.7/100\\
 %\>\+
-%\textit{Third Year Project - 89\% awarded `Project of the Year 2007'}
-}
+%\textit{Introduction to Classical Japanese Literature} - A \\
+%\textit{Japanese Politics-E2} - A \\
+%\textit{Contemporary Philosophy in Japan} - A \\
+%\textit{Japanese Intellectual History II-E2} - A\\
+%\textit{Philosophy of Religion B (Lectures)} in Japanese - A\\
+%\textit{Programming Languages} in Japanese - B\\
+%\textit{Philosophy of Religion (Seminars)} in Japanese - A+\\
+%}
 
 %------------------------------------------------
 
-\tabbedblock{
-\bf{Fall 2016} \> Exchange Semester - \href{http://www.kyoto-u.ac.jp}{Kyoto University}\\[5pt]
-\> Gpa - 89.7/100\\
-\>\+
-\textit{Introduction to Classical Japanese Literature} - A \\
-\textit{Japanese Politics-E2} - A \\
-\textit{Contemporary Philosophy in Japan} - A \\
-\textit{Japanese Intellectual History II-E2} - A\\
-\textit{Philosophy of Religion B (Lectures)} in Japanese - A\\
-\textit{Programming Languages} in Japanese - B\\
-\textit{Philosophy of Religion (Seminars)} in Japanese - A+\\
+\job
+{Jul 2014}{}
+{Freie Universität Berlin, Berlin, Germany}
+{http://www.fu-berlin.de/}
+{Summer Semester}
+{
 }
 
-%------------------------------------------------
-
-\tabbedblock{
-\bf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
-\>\+
-\textit{Islam and The West} \> A \\
-%\textit{Pure Mathematics} \> A \\
-%\textit{Statistics (AS)} \> A \\
-%\textit{Physics} \> A \\
-%\textit{Economics} \> B
-}
+%\tabbedblock{
+%\bf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
+%\>\+
+%\textit{Islam and The West} \> A
+%}
 
 %----------------------------------------------------------------------------------------
 %	Scholarships and awards SECTION
 %----------------------------------------------------------------------------------------
 
+\if\verbose1
 \section{Scholarships and Awards}
 
 \skillgroup{Overseas study abroad support system scholarship}
@@ -186,6 +210,39 @@ It is a scholarship system for early selection of undergraduates who want to stu
 Mar 2011 - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
 \textit{4 years full scholarship}\\
 }
+\fi
+
+%----------------------------------------------------------------------------------------
+%	Projects SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\skillgroup{Hardware Accelerator (Hardware System Design)}
+{
+Processing System, Matrix-Vector Multiplication IP, BRAM for DNN. On FPGA in Verliog, Cpp, Python.\\
+Caculation: 423.15\% faster than CPU (Benchmark using MNIST)
+}
+\skillgroup{Scheduler using Weighted Round Robin (Operating Systems)}
+{
+Task Scheduler running reasonable performance. In Kernel 3.10.
+}
+\skillgroup{Geo-tagged File System (Operating Systems)}
+{
+File system accessible according to the GPS of a mobile device. In Kernel 3.10.
+}
+\skillgroup{Rotation based Lock for Synchronization (Operating Systems)}
+{
+RWLock-like Lock according to the rotation of a mobile device. In Kernel 3.10.
+}
+\skillgroup{Async Web Engine (Creative Integrated Design)}
+{
+Project with \href{https://kr.tmaxsoft.com/main.do}{TmaxSoft}. Outperformed Nodejs marginally. In Java.
+}
+\skillgroup{Lisp Interpreter (Principles of Programming)}
+{
+Racket interpreter. In OCaml
+}
 
 %----------------------------------------------------------------------------------------
 %	Languages SECTION
@@ -200,15 +257,14 @@ Native
 
 \skillgroup{English}
 {
-Fluent\\
-TOEFL: 100/120\\
-GRE: Verbal 156/170, Quant. 170/170
+Business Level\\
+TOEFL: 104/120 \hspace{10mm} GRE: Verbal 156/170, Quant. 170/170
 }
 
 \skillgroup{Japanese}
 {
-Fluent\\
-Took courses in Kyoto University with natives and scored high.
+Business Level\\
+Exchange semester in Japan
 }
 
 %----------------------------------------------------------------------------------------
@@ -285,5 +341,6 @@ Took courses in Kyoto University with natives and scored high.
 %\end{tabbing}}
 
 %----------------------------------------------------------------------------------------
+
 
 \end{document}
