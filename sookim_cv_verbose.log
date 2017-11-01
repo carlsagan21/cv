@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.9.4)  26 OCT 2017 22:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.9.4)  26 OCT 2017 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**sookim_cv_cse.tex
-(./sookim_cv_cse.tex
+**sookim_cv_verbose.tex
+(./sookim_cv_verbose.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -577,8 +577,8 @@ les
 )
 \smallertextwidth=\skip59
 )
-(./sookim_cv_cse.aux)
-\openout1 = `sookim_cv_cse.aux'.
+(./sookim_cv_verbose.aux)
+\openout1 = `sookim_cv_verbose.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -650,9 +650,9 @@ LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
 LaTeX Info: Redefining \nameref on input line 30.
 
-(./sookim_cv_cse.out) (./sookim_cv_cse.out)
+(./sookim_cv_verbose.out) (./sookim_cv_verbose.out)
 \@outlinefile=\write3
-\openout3 = `sookim_cv_cse.out'.
+\openout3 = `sookim_cv_verbose.out'.
 
 .................................................
 . fontspec info: "setup-math"
@@ -732,25 +732,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
+
+Package hyperref Warning: Suppressing link with empty target on input line 90.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 119.
+
+
 [1
 
-] 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+
+ []
+
+[2] 
 AED: lastpage setting LastPage
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
- (./sookim_cv_cse.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 266.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
+ (./sookim_cv_verbose.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
  17485 strings out of 493005
- 333045 string characters out of 6134597
- 414089 words of memory out of 5000000
+ 333097 string characters out of 6134597
+ 415093 words of memory out of 5000000
  21377 multiletter control sequences out of 15000+600000
  7118 words of font info for 32 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 37i,11n,66p,10450b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,66p,10454b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sookim_cv_cse.pdf (2 pages).
+Output written on sookim_cv_verbose.pdf (3 pages).
