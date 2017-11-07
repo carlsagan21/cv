@@ -20,7 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \def\verbose{0}
-\def\japan{0}
+%\def\japan{0}
 
 \documentclass[10pt]{article} % Default font size
 
@@ -52,8 +52,6 @@
 \textbf{Nationality} \> Republic of Korea\\ % Nationality
 \textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
 \textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
-%\textbf{linkedin} \> \href{https://www.linkedin.com/in/soo-kim-carlsagan96/}{soo-kim-carlsagan96} \\
-%\textbf{Github} \> \href{https://github.com/carlsagan21}{carlsagan21}
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -62,8 +60,6 @@
 
 \section{Personal Profile}
 
-%Research Assistant at Programming Research Laboratory ROPAS, Computer Science and Engineering, Seoul National University.\\
-%Interested in program analysis, distributed computing, clustering, and the-state-of-art techniques in web development from front-end to architecture.
 Accomplished outstandingly (major 3.85/4.3) at the most prestigious university in Korea and\\
 Gained industrial and research experience in the startup and the laboratory.
 
@@ -81,7 +77,7 @@ Gained industrial and research experience in the startup and the laboratory.
 {College of Liberal Studies}
 {
 \textit{Candidate for Bachelor's Degree in Computer Science Engineering}\\
-\if\japan1
+\if\verbose1
 \textit{Candidate for Bachelor's Degree in Cognitive Studies of Religion}\\
 \fi
 4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
@@ -91,7 +87,7 @@ Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integr
 
 %------------------------------------------------
 
-\if\japan1
+\if\verbose1
 \job
 {Sep 2016 -}{Feb 2017}
 {Kyoto University}
@@ -105,13 +101,11 @@ Related Courses: Programming Languages
 \fi
 
 %\tabbedblock{
-%\textbf{Fall 2016} \> Exchange Semester - \href{http://www.kyoto-u.ac.jp}{Kyoto University}\\[5pt]
-%\> GPA - 89.7/100\\
 %\>\+
-%\textit{Introduction to Classical Japanese Literature} - A \\
-%\textit{Japanese Politics-E2} - A \\
-%\textit{Contemporary Philosophy in Japan} - A \\
-%\textit{Japanese Intellectual History II-E2} - A\\
+%\textit{Introduction to Classical Japanese Literature} - A\\
+%\textit{Japanese Politics-E2} - A\\
+%\textit{Contemporary Philosophy in Japan} - A\\
+%textit{Japanese Intellectual History II-E2} - A\\
 %\textit{Philosophy of Religion B (Lectures)} in Japanese - A\\
 %\textit{Programming Languages} in Japanese - B\\
 %\textit{Philosophy of Religion (Seminars)} in Japanese - A+\\
@@ -126,13 +120,14 @@ Related Courses: Programming Languages
 {Berlin}
 {http://www.fu-berlin.de/}
 {Summer Semester}
+\fi
 
 %\tabbedblock{
 %\textbf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
 %\>\+
 %\textit{Islam and The West} \> A
 %}
-\fi
+
 
 %----------------------------------------------------------------------------------------
 %	Relevant Experience SECTION
@@ -149,8 +144,6 @@ Related Courses: Programming Languages
 {Developed automated program corrector using machine learning, to feedback assignments of the elementary programming course automatically.\\
 Technologies: TensorFlow, Seq2seq}
 
-%------------------------------------------------
-
 \job
 {Dec 2015 -}{Aug 2016}
 {Ab180}
@@ -160,6 +153,23 @@ Technologies: TensorFlow, Seq2seq}
 {Airbridge (Mobile app marketing performance analytics)\\
 Developed front-end web, to display marketing performance analysis results without delay (attracted the 600M won (540,000\$) investment from \href{http://www.jointips.or.kr/}{TIPS}.)\\
 Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon E2. / As a team, Scrum, JIRA, Confluence}
+
+\if\verbose1
+\job
+{Mar 2015 -}{Aug 2016}
+{Human Nature Studies and Philosophy of Biology, Seoul National University}
+{Seoul}
+{}
+{Research Assistant}
+{Researched Cultural Evolution, Morality and Sociality at Trans-disciplinary Research Center for Culture-Brain Dynamics}
+
+\job
+{Sep 2011 -}{Jun 2013}
+{Republic of Korea Army}
+{}
+{}
+{Sergeant}
+\fi
 
 %------------------------------------------------
 
@@ -175,17 +185,19 @@ Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkin
 {Operating Systems}
 {Implemented task scheduler with weighted round robin policy in kernel 3.10 (runned with reasonable performance)}
 
-%\project
-%{}
-%{Geo-tagged File System}
-%{Operating Systems}
-%{Ext3 based File system accessible according to the GPS of a mobile device. In Kernel 3.10.}
+\if\verbose1
+\project
+{}
+{Geo-tagged File System}
+{Operating Systems}
+{Ext3 based File system accessible according to the GPS of a mobile device. In Kernel 3.10.}
 
-%\project
-%{}
-%{Rotation based Lock for Synchronization}
-%{Operating Systems}
-%{RWLock-like Lock according to the rotation of a mobile device. In Kernel 3.10.}
+\project
+{}
+{Rotation based Lock for Synchronization}
+{Operating Systems}
+{RWLock-like Lock according to the rotation of a mobile device. In Kernel 3.10.}
+\fi
 
 \project
 {}
@@ -199,50 +211,13 @@ Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkin
 {Principles of Programming}
 {Implemented Racket (a dialect of Lisp) interpreter in OCaml}
 
-\if\verbose1
-\job
-{Mar 2015 -}{Aug 2016}
-{Human Nature Studies and Philosophy of Biology, Seoul National University}
-{Seoul}
-{}
-{Research Assistant}
-{Researched Cultural Evolution, Morality and Sociality at Trans-disciplinary Research Center for Culture-Brain Dynamics}
-\fi
-
-%------------------------------------------------
-
-\if\verbose1
-\job
-{Sep 2011 -}{Jun 2013}
-{Republic of Korea Army}
-{}
-{}
-{Sergeant}
-\fi
-
 %----------------------------------------------------------------------------------------
-%	skills and others SECTION
+%	scholarships and awards SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Skills and Others}
-
-\skillgroup{Languages}
-{
-English: Business Level (TOEFL: 104/120, GRE: Verbal 156/170) / Japanese: Business Level
-}
-
-\skillgroup{Interests}
-{
-Program Analysis, Software Engineering, Distributed Computing, Cloud Computing, Front-end Web
-}
-
-\skillgroup{Links}
-{
-Linkedin: \href{https://www.linkedin.com/in/soo-kim-carlsagan96}{www.linkedin.com/in/soo-kim-carlsagan96}\\
-Github: \href{https://github.com/carlsagan21}{github.com/carlsagan21}
-}
-
 \if\verbose1
+\section{Scholarships and Awards}
+
 \skillgroup{Overseas study abroad support system scholarship}
 {
 Oct 2016 - \href{http://www.jasso.go.jp/ryugaku/tantosha/study_a/short_term_h/index.html}{JASSO}\\
@@ -268,6 +243,28 @@ Mar 2011 - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundati
 \textit{4 years full scholarship}\\
 }
 \fi
+
+%----------------------------------------------------------------------------------------
+%	skills and others SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills and Others}
+
+\skillgroup{Languages}
+{
+English: Business Level (TOEFL: 104/120, GRE: Verbal 156/170) / Japanese: Business Level
+}
+
+\skillgroup{Interests}
+{
+Program Analysis, Software Engineering, Distributed Computing, Cloud Computing, Front-end Web
+}
+
+\skillgroup{Links}
+{
+Linkedin: \href{https://www.linkedin.com/in/soo-kim-carlsagan96}{www.linkedin.com/in/soo-kim-carlsagan96}\\
+Github: \href{https://github.com/carlsagan21}{github.com/carlsagan21}
+}
 
 %----------------------------------------------------------------------------------------
 
