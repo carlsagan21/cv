@@ -15,7 +15,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\usepackage[a4paper, hmargin=25mm, vmargin=30mm, top=20mm]{geometry} % Use A4 paper and set margins
+\usepackage[letterpaper, hmargin=20mm, vmargin=25mm, top=15mm]{geometry} % Use A4 paper and set margins
 
 \usepackage{fancyhdr} % Customize the header and footer
 
@@ -64,6 +64,10 @@ SmallCapsFeatures = {Letters = SmallCaps}
 
 \newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
 
+\usepackage{titlesec}
+%\titleformat{\section}[display]{}{}{0.1ex}{}[]
+\titlespacing{\section}{0pc}{0.3pc}{0.1pc}
+
 %----------------------------------------------------------------------------------------
 %	MAIN HEADER COMMAND
 %----------------------------------------------------------------------------------------
@@ -77,14 +81,30 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	JOB COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\job}[6]{
+\newcommand{\job}[7]{
 \begin{tabbing}
 \hspace{2cm} \= \kill
-{#1} \> \textbf{\href{#4}{#3}} \\
-{#2} \>\+ \textit{#5} \\
+{#1} \> \textbf{\href{#5}{#3}}, \textit{#4} \\
+{#2} \>\+ \textit{#6} \\
 \begin{minipage}{\smallertextwidth}
-\vspace{1mm}
-#6
+%\vspace{1mm}
+#7
+\end{minipage}
+\end{tabbing}
+%\vspace{1mm}
+}
+
+%----------------------------------------------------------------------------------------
+%	project COMMAND
+%----------------------------------------------------------------------------------------
+
+\newcommand{\project}[4]{
+\begin{tabbing}
+\hspace{2cm} \= \kill
+{#1} \> \textbf{#2}, \textit{#3} \\
+\>
+\begin{minipage}{\smallertextwidth}
+#4
 \end{minipage}
 \end{tabbing}
 %\vspace{1mm}
@@ -99,11 +119,12 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \hspace{5mm} \= \kill
 \sqbullet \>\+ \textbf{#1} \\
 \begin{minipage}{\smallertextwidth}
-\vspace{1mm}
+%\vspace{1mm}
 #2
 \end{minipage}
 \end{tabbing}
 }
+
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS GROUP COMMAND

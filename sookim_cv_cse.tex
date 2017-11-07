@@ -20,6 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \def\verbose{0}
+\def\japan{0}
 
 \documentclass[10pt]{article} % Default font size
 
@@ -36,23 +37,23 @@
 
 %------------------------------------------------
 
-\parbox{0.5\textwidth}{ % First block
+\parbox[c][3em][c]{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Address} \> 16, Seorim 11ga-gil, Gwanak-gu,\\ % Address line 1
-\> Seoul, 08840, Republic of Korea \\ % Address line 2
-{\bf Date of Birth} \> 25$^{th}$ September 1991 \\ % Date of birth 
-{\bf Nationality} \> Republic of Korea % Nationality
+\textbf{Address} \> 16, Seorim 11ga-gil, Gwanak-gu,\\ % Address line 1
+\> Seoul, 08840, Republic of Korea\\ % Address line 2
+\textbf{Date of Birth} \> 25$^{th}$ September 1991\\ % Date of birth 
 \end{tabbing}
 }
 \hfill % Horizontal space between the two blocks
-\parbox{0.5\textwidth}{ % Second block
+\parbox[c][3em][c]{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Mobile Phone} \> +82 10 8560 6797 \\ % Mobile phone
-{\bf Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com} \\ % Email address
-{\bf linkedin} \> \href{https://www.linkedin.com/in/soo-kim-carlsagan96/}{soo-kim-carlsagan96} \\
-{\bf Github} \> \href{https://github.com/carlsagan21}{carlsagan21}
+\textbf{Nationality} \> Republic of Korea\\ % Nationality
+\textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
+\textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
+%\textbf{linkedin} \> \href{https://www.linkedin.com/in/soo-kim-carlsagan96/}{soo-kim-carlsagan96} \\
+%\textbf{Github} \> \href{https://github.com/carlsagan21}{carlsagan21}
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -62,61 +63,9 @@
 \section{Personal Profile}
 
 %Research Assistant at Programming Research Laboratory ROPAS, Computer Science and Engineering, Seoul National University.\\
-Interested in program analysis, distributed computing, clustering, and the-state-of-art techniques in web development from front-end to architecture.
-
-%----------------------------------------------------------------------------------------
-%	Research Experience SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Research Experience}
-
-\job
-{Jul 2017 -}{Present}
-{Programming Research Laboratory, Seoul National University}
-{http://ropas.snu.ac.kr/}
-{Research Assistant}
-{Automated program corrector using machine learning.\\
-%Automated program error localization using SAT-solver.\\
-\rule{0mm}{5mm}{Technologies:} Tensorflow, seq2seq}
-
-%------------------------------------------------
-
-\if\verbose1
-\job
-{Mar 2015 -}{Aug 2016}
-{Jang’s Lab for Human Nature Studies and Philosophy of Biology, Seoul National University}
-{}
-{Research Assistant}
-{Researched Cultural Evolution, Morality and Sociality at Transdisciplinary Research Center for Culture-Brain Dynamics}
-\fi
-
-%----------------------------------------------------------------------------------------
-%	Work Experience SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Work Experience}
-
-\job
-{Dec 2015 -}{Aug 2016}
-{Ab180, Seoul, Republic of Korea}
-{https://airbridge.io/}
-{Front-end Developer}
-{Airbridge (Mobile app marketing performance analytics) https://airbridge.io/
-
-Developed front-end web alone using React.
-
-Attracted the 600M won(540,000\$) investment from TIPS. http://www.jointips.or.kr/\\
-\rule{0mm}{5mm}{Technologies:} React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon E2. / As a team, Scrum, JIRA, Confluence, Trello}
-
-%------------------------------------------------
-
-\if\verbose1
-\job
-{Sep 2011 -}{Jun 2013}
-{Republic of Korea Army}
-{}
-{Sergeant}
-\fi
+%Interested in program analysis, distributed computing, clustering, and the-state-of-art techniques in web development from front-end to architecture.
+Accomplished outstandingly (major 3.85/4.3) at the most prestigious university in Korea and\\
+Gained industrial and research experience in the startup and the laboratory.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -126,31 +75,37 @@ Attracted the 600M won(540,000\$) investment from TIPS. http://www.jointips.or.k
 
 \job
 {Mar 2011 -}{Present}
-{Seoul National University, Seoul, Republic of Korea}
+{Seoul National University}
+{Seoul}
 {http://www.snu.ac.kr/index.html}
 {College of Liberal Studies}
 {
-\textit{Candidate for Bachelor?s Degree in Computer Science Engineering}\\
-\textit{Candidate for Bachelor?s Degree in Cognitive Studies of Religion}\\
+\textit{Candidate for Bachelor's Degree in Computer Science Engineering}\\
+\if\japan1
+\textit{Candidate for Bachelor's Degree in Cognitive Studies of Religion}\\
+\fi
 4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
 GPA: 3.75/4.3 \hspace{10mm} GPA(Major): 3.85/4.3\\
-\rule{0mm}{5mm}{Related Courses:} Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
+Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
 }
 
 %------------------------------------------------
 
+\if\japan1
 \job
 {Sep 2016 -}{Feb 2017}
-{Kyoto University, Kyoto, Japan}
+{Kyoto University}
+{Kyoto}
 {http://www.kyoto-u.ac.jp}
 {Exchange Semester}
 {
 Overseas Study Abroad Support System Scholarship - \textit{480,000 yen(4800\$)} \href{http://www.jasso.go.jp/ryugaku/tantosha/study_a/short_term_h/index.html}{JASSO}\\
-\rule{0mm}{5mm}{Related Courses:} Programming Languages
+Related Courses: Programming Languages
 }
+\fi
 
 %\tabbedblock{
-%\bf{Fall 2016} \> Exchange Semester - \href{http://www.kyoto-u.ac.jp}{Kyoto University}\\[5pt]
+%\textbf{Fall 2016} \> Exchange Semester - \href{http://www.kyoto-u.ac.jp}{Kyoto University}\\[5pt]
 %\> GPA - 89.7/100\\
 %\>\+
 %\textit{Introduction to Classical Japanese Literature} - A \\
@@ -164,24 +119,130 @@ Overseas Study Abroad Support System Scholarship - \textit{480,000 yen(4800\$)} 
 
 %------------------------------------------------
 
+\if\verbose1
 \job
 {Jul 2014}{}
-{Freie Universität Berlin, Berlin, Germany}
+{Freie Universität Berlin}
+{Berlin}
 {http://www.fu-berlin.de/}
 {Summer Semester}
 
 %\tabbedblock{
-%\bf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
+%\textbf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
 %\>\+
 %\textit{Islam and The West} \> A
 %}
+\fi
+
+%----------------------------------------------------------------------------------------
+%	Relevant Experience SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Relevant Experience}
+
+\job
+{Jul 2017 -}{Present}
+{Programming Research Laboratory, Seoul National University}
+{Seoul}
+{http://ropas.snu.ac.kr/}
+{Research Assistant, Intern}
+{Developed automated program corrector using machine learning, to feedback assignments of the elementary programming course automatically.\\
+Technologies: TensorFlow, Seq2seq}
+
+%------------------------------------------------
+
+\job
+{Dec 2015 -}{Aug 2016}
+{Ab180}
+{Seoul}
+{https://airbridge.io/}
+{Front-end Developer (6$^{th}$ member in the company)}
+{Airbridge (Mobile app marketing performance analytics)\\
+Developed front-end web, to display marketing performance analysis results without delay (attracted the 600M won (540,000\$) investment from \href{http://www.jointips.or.kr/}{TIPS}.)\\
+Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon E2. / As a team, Scrum, JIRA, Confluence}
+
+%------------------------------------------------
+
+\project
+{Projects}
+{Hardware Calculation Accelerator}
+{Hardware System Design}
+{Implemented matrix-vector multiplication IP, BRAM for DNN on FPGA, using Verilog, Cpp, Python (resulted 423.15\% faster performance than that of CPU in benchmark using MNIST)}
+
+\project
+{}
+{Scheduler using Weighted Round Robin}
+{Operating Systems}
+{Implemented task scheduler with weighted round robin policy in kernel 3.10 (runned with reasonable performance)}
+
+%\project
+%{}
+%{Geo-tagged File System}
+%{Operating Systems}
+%{Ext3 based File system accessible according to the GPS of a mobile device. In Kernel 3.10.}
+
+%\project
+%{}
+%{Rotation based Lock for Synchronization}
+%{Operating Systems}
+%{RWLock-like Lock according to the rotation of a mobile device. In Kernel 3.10.}
+
+\project
+{}
+{Async Web Engine}
+{Creative Integrated Design}
+{Developed asynchronous web engine like Netty with \href{https://kr.tmaxsoft.com/main.do}{TmaxSoft} in Java (outperformed Nodejs in response time benchmark using JMeter)}
+
+\project
+{}
+{Lisp Interpreter}
+{Principles of Programming}
+{Implemented Racket (a dialect of Lisp) interpreter in OCaml}
+
 \if\verbose1
+\job
+{Mar 2015 -}{Aug 2016}
+{Human Nature Studies and Philosophy of Biology, Seoul National University}
+{Seoul}
+{}
+{Research Assistant}
+{Researched Cultural Evolution, Morality and Sociality at Trans-disciplinary Research Center for Culture-Brain Dynamics}
+\fi
+
+%------------------------------------------------
+
+\if\verbose1
+\job
+{Sep 2011 -}{Jun 2013}
+{Republic of Korea Army}
+{}
+{}
+{Sergeant}
+\fi
+
 %----------------------------------------------------------------------------------------
-%	Scholarships and awards SECTION
+%	skills and others SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Scholarships and Awards}
+\section{Skills and Others}
 
+\skillgroup{Languages}
+{
+English: Business Level (TOEFL: 104/120, GRE: Verbal 156/170) / Japanese: Business Level
+}
+
+\skillgroup{Interests}
+{
+Program Analysis, Software Engineering, Distributed Computing, Cloud Computing, Front-end Web
+}
+
+\skillgroup{Links}
+{
+Linkedin: \href{https://www.linkedin.com/in/soo-kim-carlsagan96}{www.linkedin.com/in/soo-kim-carlsagan96}\\
+Github: \href{https://github.com/carlsagan21}{github.com/carlsagan21}
+}
+
+\if\verbose1
 \skillgroup{Overseas study abroad support system scholarship}
 {
 Oct 2016 - \href{http://www.jasso.go.jp/ryugaku/tantosha/study_a/short_term_h/index.html}{JASSO}\\
@@ -209,96 +270,8 @@ Mar 2011 - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundati
 \fi
 
 %----------------------------------------------------------------------------------------
-%	Projects SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Projects}
-
-\skillgroup{Hardware Accelerator (Hardware System Design)}
-{
-Processing System, Matrix-Vector Multiplication IP, BRAM for DNN. On FPGA in Verliog, Cpp, Python.\\
-Caculation: 423.15\% faster than CPU (Benchmark using MNIST)
-}
-\skillgroup{Scheduler using Weighted Round Robin (Operating Systems)}
-{
-Task Scheduler running reasonable performance. In Kernel 3.10.
-}
-\skillgroup{Geo-tagged File System (Operating Systems)}
-{
-File system accessible according to the GPS of a mobile device. In Kernel 3.10.
-}
-\skillgroup{Rotation based Lock for Synchronization (Operating Systems)}
-{
-RWLock-like Lock according to the rotation of a mobile device. In Kernel 3.10.
-}
-\skillgroup{Async Web Engine (Creative Integrated Design)}
-{
-Project with \href{https://kr.tmaxsoft.com/main.do}{TmaxSoft}. Outperformed Nodejs marginally. In Java.
-}
-\skillgroup{Lisp Interpreter (Principles of Programming)}
-{
-Racket interpreter. In OCaml.
-}
-
-%----------------------------------------------------------------------------------------
-%	Languages SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Languages}
-
-\skillgroup{Korean}
-{
-Native
-}
-
-\skillgroup{English}
-{
-Business Level\\
-TOEFL: 104/120 \hspace{10mm} GRE: Verbal 156/170, Quant. 170/170
-}
-
-\skillgroup{Japanese}
-{
-Business Level\\
-Exchange semester in Japan
-}
 
 \end{document}
-
-%----------------------------------------------------------------------------------------
-%	IT/COMPUTING SKILLS SECTION
-%----------------------------------------------------------------------------------------
-%
-%\section{Software Engineering Skills}
-%
-%\skillgroup{Programming Languages}
-%{
-%\textit{Ruby} - MRI 1.8.7, 1.9.2\\
-%\textit{ASP.NET, C\#, VB.NET}\\
-%\textit{PHP}\\
-%\textit{Java/Scala}
-%}
-%
-%%------------------------------------------------
-%
-%\skillgroup{Web Development}
-%{
-%\textit{HTML5, CSS3/SASS, JavaScript/CoffeeScript/jQuery}\\
-%\textit{Ruby on Rails v3.1}\\
-%\textit{Test:Unit, RSpec, Cucumber, Selenium} - automated testing frameworks\\
-%\textit{Apache/Nginx Web Servers}\\
-%}
-%
-%%------------------------------------------------
-%
-%\skillgroup{Miscellaneous}
-%{
-%\textit{Microsoft SQL Server 2000/2005} - database architecture and administration\\
-%\textit{Transact-SQL} - data definition and manipulation\\
-%\textit{SQL Profiler} - performance tuning and debugging\\
-%\textit{MySQL Server}\\
-%\textit{CVS, DARCS, git} - source version control
-%}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
@@ -323,19 +296,19 @@ Exchange semester in Japan
 %\parbox{0.5\textwidth}{ % First block
 %\begin{tabbing}
 %\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
-%{\bf Name} \> Bill Lumbergh \\ % Referee name
-%{\bf Company} \> Initech Inc. \\ % Referee company
-%{\bf Position} \> Vice President \\ % Referee job title 
-%{\bf Contact} \> \href{mailto:bill@initech.com}{bill@initech.com} % Referee contact information
+%{\textbf Name} \> Bill Lumbergh \\ % Referee name
+%{\textbf Company} \> Initech Inc. \\ % Referee company
+%{\textbf Position} \> Vice President \\ % Referee job title 
+%{\textbf Contact} \> \href{mailto:bill@initech.com}{bill@initech.com} % Referee contact information
 %\end{tabbing}}
 %\hfill % Horizontal space between the two blocks
 %\parbox{0.5\textwidth}{ % Second block
 %\begin{tabbing}
 %\hspace{2.75cm} \= \hspace{4cm} \= \kill % Spacing within the block
-%{\bf Name} \> Michael "Big Mike" Tucker\\ % Referee name
-%{\bf Company} \> Burbank Buy More \\ % Referee company
-%{\bf Position} \> Store Manager \\ % Referee job title 
-%{\bf Contact} \> \href{mailto:mike@buymore.com}{mike@buymore.com} % Referee contact information
+%{\textbf Name} \> Michael "Big Mike" Tucker\\ % Referee name
+%{\textbf Company} \> Burbank Buy More \\ % Referee company
+%{\textbf Position} \> Store Manager \\ % Referee job title 
+%{\textbf Contact} \> \href{mailto:mike@buymore.com}{mike@buymore.com} % Referee contact information
 %\end{tabbing}}
 
 %----------------------------------------------------------------------------------------
