@@ -20,6 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \def\verbose{0}
+\def\superVerbose{0}
 
 \documentclass[10pt]{article} % Default font size
 
@@ -38,7 +39,7 @@
 
 \parbox[c][3em][c]{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+\hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
 \textbf{Address} \> 16, Seorim 11ga-gil, Gwanak-gu,\\ % Address line 1
 \> Seoul, 08840, Republic of Korea\\ % Address line 2
 \textbf{Date of Birth} \> 25$^{th}$ September 1991\\ % Date of birth 
@@ -47,7 +48,7 @@
 \hfill % Horizontal space between the two blocks
 \parbox[c][3em][c]{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+\hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
 \textbf{Nationality} \> Republic of Korea\\ % Nationality
 \textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
 \textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
@@ -59,8 +60,8 @@
 
 \section{Personal Profile}
 
-Attending Seoul National University (major 3.85/4.3) and expected to graduate 08.2018.\\
-Gained industrial and research experience in the IT startup and the laboratory.
+Attending Seoul National University (major 3.85/4.3) and expected to graduate 08.2018. Gained industrial and research experience in an IT startup and a laboratory.\\
+Interests: Program Analysis, Type System, Functional Programming, Software Engineering, Distributed Computing, Cloud Computing, Web.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -82,6 +83,10 @@ Gained industrial and research experience in the IT startup and the laboratory.
 4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
 GPA: 3.75/4.3 \hspace{10mm} GPA(CS major): 3.85/4.3\\
 Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
+\if\verbose1
+\\
+Activities and societies: Study of Middle East and Islam
+\fi
 }
 
 %------------------------------------------------
@@ -95,24 +100,23 @@ Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integr
 {Exchange Semester}
 {
 Overseas Study Abroad Support System Scholarship - \textit{480,000 yen(4800\$)} \href{http://www.jasso.go.jp/ryugaku/tantosha/study_a/short_term_h/index.html}{JASSO}\\
-Related Courses: Programming Languages
+Related Courses: Programming Languages\\
+Activities and societies: FleeGarden, Athletic circle
 }
-\fi
 
-%\tabbedblock{
-%\>\+
-%\textit{Introduction to Classical Japanese Literature} - A\\
-%\textit{Japanese Politics-E2} - A\\
-%\textit{Contemporary Philosophy in Japan} - A\\
-%textit{Japanese Intellectual History II-E2} - A\\
-%\textit{Philosophy of Religion B (Lectures)} in Japanese - A\\
-%\textit{Programming Languages} in Japanese - B\\
-%\textit{Philosophy of Religion (Seminars)} in Japanese - A+\\
-%}
+\tabbedblock{
+\>\+
+\textit{Introduction to Classical Japanese Literature} - A\\
+\textit{Japanese Politics-E2} - A\\
+\textit{Contemporary Philosophy in Japan} - A\\
+\textit{Japanese Intellectual History II-E2} - A\\
+\textit{Philosophy of Religion B (Lectures)} in Japanese - A\\
+\textit{Programming Languages} in Japanese - B\\
+\textit{Philosophy of Religion (Seminars)} in Japanese - A+\\
+}
 
 %------------------------------------------------
 
-\if\verbose1
 \jobnocontent
 {Jul 2014}{}
 {Freie Universität Berlin}
@@ -121,11 +125,12 @@ Related Courses: Programming Languages
 {Summer Semester}
 
 
-%\tabbedblock{
-%\textbf{July 2014} \> Summer Semester - \href{http://www.fu-berlin.de/}{Freie Universität Berlin}\\[5pt]
-%\>\+
-%\textit{Islam and The West} \> A
-%}
+\tabbedblock{
+\>\+
+\textit{Islam and The West} \> A
+}
+
+%------------------------------------------------
 
 \jobnocontent
 {Mar 2007 -}{Feb 2010}
@@ -133,7 +138,6 @@ Related Courses: Programming Languages
 {Gimhae}
 {http://gimfl-h.gne.go.kr/}
 {English-Japanese Major}
-{}
 \fi
 %----------------------------------------------------------------------------------------
 %	Relevant Experience SECTION
@@ -235,6 +239,20 @@ Developed ejs loader for webpack. Recorded total 1367 downloads.}
 {Implemented Racket (a dialect of Lisp) interpreter in OCaml}
 \fi
 
+\if\superVerbose1
+\project
+{}
+{Transdisciplinary Research Center for Culture-Brain Dynamics}
+{Research Assistant Intern}
+{regarding Cultural Evolution, Morality and Sociality}
+
+\project
+{}
+{The Korean Society for Cognitive Science Annual Conference, 2015}
+{Undergraduate Staff}
+{}
+\fi
+
 %----------------------------------------------------------------------------------------
 %	scholarships and awards SECTION
 %----------------------------------------------------------------------------------------
@@ -274,16 +292,9 @@ Mar 2011 - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundati
 
 \section{Skills and Others}
 
-\if\verbose1
 \skillgroup{Languages}
 {
 English: Business Level (TOEFL: 104/120, GRE: Verbal 156/170) / Japanese: Business Level
-}
-\fi
-
-\skillgroup{Interests}
-{
-Program Analysis, Software Engineering, Distributed Computing, Cloud Computing, Front-end Web
 }
 
 \skillgroup{Links}
@@ -291,6 +302,60 @@ Program Analysis, Software Engineering, Distributed Computing, Cloud Computing, 
 Linkedin: \href{https://www.linkedin.com/in/soo-kim-carlsagan96}{www.linkedin.com/in/soo-kim-carlsagan96}\\
 Github: \href{https://github.com/carlsagan21}{github.com/carlsagan21}
 }
+
+%----------------------------------------------------------------------------------------
+%	volunteer experience SECTION
+%----------------------------------------------------------------------------------------
+
+\if\superVerbose1
+\section{Volunteer Experience}
+
+\skillgroup{Educator}
+{
+People who Share Leanings\\
+Jul 2011 - Aug 2011\\
+Education\\
+Educating junior high school students\\
+540min (3 times)
+}
+
+
+\skillgroup{Volunteer}
+{
+Asian Bridge\\
+Feb 2014 - Apr 2014\\
+Poverty Alleviation\\
+2014.2.16~2.24\\
+India Varanasi\\
+60 hours
+}
+
+\skillgroup{Founder / Volunteer}
+{
+4 battalion volunteers\\
+Mar 2013 - May 2013\\
+Education\\
+Educating English and Math to local students\\
+48 hours\\
+While under military service, I organized volunteer group for educating local students. Connected with local children center, Emmanuel local children center located in Busan, we educated children who can hardly access to private educational institutes.
+}
+\fi
+
+%----------------------------------------------------------------------------------------
+%	Organization SECTION
+%----------------------------------------------------------------------------------------
+
+\if\superVerbose1
+\section{Organization}
+
+\skillgroup{Middle East Study Club}
+{
+Mar 2014 ? Dec 2015\\
+Lead\\
+A voluntary group formed by students to study Middle East Area Studies.
+}
+
+\fi
 
 %----------------------------------------------------------------------------------------
 
