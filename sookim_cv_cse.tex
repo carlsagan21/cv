@@ -40,18 +40,19 @@
 \parbox[c][3em][c]{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
-\textbf{Address} \> 16, Seorim 11ga-gil, Gwanak-gu,\\ % Address line 1
-\> Seoul, 08840, Republic of Korea\\ % Address line 2
-\textbf{Date of Birth} \> 25$^{th}$ September 1991\\ % Date of birth 
+\textbf{Location} \> Seoul, Republic of Korea\\ % Address line 1
+% \> \\ % Address line 2
+\textbf{Year of Birth} \> 1991\\ % Date of birth
+\textbf{Nationality} \> Republic of Korea\\ % Nationality
 \end{tabbing}
 }
 \hfill % Horizontal space between the two blocks
 \parbox[c][3em][c]{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
-\textbf{Nationality} \> Republic of Korea\\ % Nationality
 \textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
 \textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
+\\
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -60,7 +61,7 @@
 
 \section{Personal Profile}
 
-Attending Seoul National University (major 3.85/4.3) and expected to graduate 08.2018. Gained industrial and research experience in an IT startup and a laboratory.\\
+Attending Seoul National University (major 3.85/4.3) and expected to graduate 08.2018.\\
 Interests: Program Analysis, Type System, Functional Programming, Software Engineering, Distributed Computing, Cloud Computing, Web.
 
 %----------------------------------------------------------------------------------------
@@ -81,7 +82,7 @@ Interests: Program Analysis, Type System, Functional Programming, Software Engin
 \textit{Candidate for Bachelor's Degree in Cognitive Studies of Religion}\\
 \fi
 4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
-GPA: 3.75/4.3 \hspace{10mm} GPA(CS major): 3.85/4.3\\
+GPA(CS major): 3.85/4.3\hspace{10mm} GPA: 3.75/4.3\\
 Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
 \if\verbose1
 \\
@@ -144,6 +145,14 @@ Activities and societies: FleeGarden, Athletic circle
 %----------------------------------------------------------------------------------------
 
 \section{Relevant Experience}
+
+\job
+{Apr 2018 -}{Present}
+{SAP Labs Korea}
+{Seoul}
+{}
+{Software Development Intern}
+{HANA Database Kernel Team}
 
 \job
 {Jan 2018 -}{Feb 2018}
@@ -225,13 +234,13 @@ Developed ejs loader for webpack. Recorded total 1367 downloads.}
 {Implemented a rwlock-like lock according to the rotation information of a mobile device in kernel 3.10}
 \fi
 
+\if\verbose1
 \project
 {}
 {Async Web Engine}
 {Creative Integrated Design}
 {Developed asynchronous web engine like Netty with \href{https://kr.tmaxsoft.com/main.do}{TmaxSoft} in Java (outperformed Nodejs in response time benchmark using JMeter)}
 
-\if\verbose1
 \project
 {}
 {Lisp Interpreter}
