@@ -40,18 +40,19 @@
 \parbox[c][3em][c]{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
-\textbf{Location} \> Seoul, Republic of Korea\\ % Address line 1
+\textbf{Location} \> Tokyo, Japan\\ % Address line 1
+\textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
 % \> \\ % Address line 2
-\textbf{Year of Birth} \> 1991\\ % Date of birth
-\textbf{Nationality} \> Republic of Korea\\ % Nationality
+% \textbf{Year of Birth} \> 1991\\ % Date of birth
+%\textbf{Nationality} \> Republic of Korea\\ % Nationality
 \end{tabbing}
 }
 \hfill % Horizontal space between the two blocks
 \parbox[c][3em][c]{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{4cm} \= \hspace{4cm} \= \kill % Spacing within the block
-\textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
-\textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
+%\textbf{Mobile Phone} \> +82 10 8560 6797\\ % Mobile phone
+%\textbf{Email} \> \href{mailto:carlsagan96@gmail.com}{carlsagan96@gmail.com}\\ % Email address
 \\
 \end{tabbing}}
 
@@ -61,10 +62,29 @@
 
 \section{Personal Profile}
 
-Graduated Seoul National University (major 3.85/4.3), Dean's Award\\
-Experienced in Web, DB, and Embedded system in ab180, SAP Labs, and Samsung Mobile\\
-Research Experience in Programming Language laboratory (ROPAS) in SNU\\
-Interests: Program Analysis, Type System, Functional Programming, Software Engineering, Distributed Computing, Cloud Computing, Web
+Software Engineer with high capacity traffic handling experience. Have hands-on web development experience using JVM languages(Java, Kotlin, Scala) and frameworks(Spring, Armeria) at server-side. React/Vue ecosystem experience in frontend-side.
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\job
+{Oct 2018 -}{Present}
+{LINE Corporation}
+{Tokyo}
+{https://linepluscorp.com/}
+{Software Engineer}
+{
+\textit{Messaging Server Development}\\
+Development and Maintenance of Official Account Messaging APIs\\
+Development of the Safety Check Message Transmission System in the event of a disaster\\
+Multiple microservice server maintenance\\
+Tech Stack: Java, Kotlin, Scala, Spring ecosystem, Armeria, Monix, CentralDogma, Envoy, Grafana, Prometheus, Sentry, Ansible, HBase, Redis, Cassandra, MySQL
+}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -85,9 +105,10 @@ Interests: Program Analysis, Type System, Functional Programming, Software Engin
 \fi
 Dean's Award\\
 4 Years Full Scholarship - \href{http://eng.kosaf.go.kr/jsp/main.jsp}{Korea Student Aid Foundation}\\
+\if\verbose1
 GPA(CS major): 3.85/4.3\hspace{10mm} GPA: 3.77/4.3\\
 Related Courses: Data Structures, Algorithms, Operating Systems, Creative Integrated Design, Programming Languages, Principles of Programming, Computer Architecture, Computer Programming, Hardware System Design, Logic Design, Electrical and Electronic Circuits, Discrete Mathematics
-\if\verbose1
+
 \\
 Activities and societies: Study of Middle East and Islam
 \fi
@@ -150,7 +171,7 @@ Activities and societies: FleeGarden, Athletic circle
 \section{Relevant Experience}
 
 \job
-{Apr 2018 -}{Present}
+{Apr 2018 -}{July 2018}
 {SAP Labs Korea}
 {Seoul}
 {}
@@ -185,7 +206,7 @@ Technologies: TensorFlow, Seq2seq}
 {Airbridge (Mobile app marketing performance analytics)\\
 Developed front-end web, the dashboard to display marketing performance analysis results\\
 Attracted the 600M won (540,000\$) investment from \href{http://www.jointips.or.kr/}{TIPS}\\
-Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkins, Flask, Amazon EC2 / As a team, Scrum, JIRA, Confluence}
+Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3}
 
 \if\verbose1
 \job
@@ -205,7 +226,7 @@ Technologies: React, Redux, Webpack, D3, Eslint, Flow, Enzyme, Amazon S3, Jenkin
 \fi
 
 %------------------------------------------------
-
+\if\verbose1
 \project
 {Projects}
 {ejs-simple-loader}
@@ -225,7 +246,6 @@ Developed ejs loader for webpack. Recorded total 1367 downloads.}
 {Operating Systems}
 {Implemented task scheduler with weighted round robin policy in kernel 3.10 (run with reasonable performance)}
 
-\if\verbose1
 \project
 {}
 {Geo-tagged File System}
@@ -364,7 +384,7 @@ While under military service, I organized volunteer group for educating local st
 
 \skillgroup{Middle East Study Club}
 {
-Mar 2014 ? Dec 2015\\
+Mar 2014 - Dec 2015\\
 Lead\\
 A voluntary group formed by students to study Middle East Area Studies.
 }
